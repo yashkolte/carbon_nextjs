@@ -1,3 +1,6 @@
+@import url("https://unpkg.com/carbon-components@latest/css/carbon-components.min.css");
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -5,8 +8,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -39,4 +42,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.bx--form-item {
+	margin-bottom: 2rem;
 }
