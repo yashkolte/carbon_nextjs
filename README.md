@@ -1,40 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Next.js Carbon UI
 
-## Getting Started
+This project is a **Login and Dashboard UI** built using **Next.js, TypeScript, and Carbon Design System**. It includes visually appealing components and icons from Carbon Design System to provide a modern and professional look.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🌟 **Next.js 14** - Fast and optimized React framework.
+- 🛠️ **TypeScript** - Type safety and better development experience.
+- 🎨 **Carbon Design System** - IBM’s design system for a sleek UI.
+- 🔒 **Login Page UI** - Well-structured and responsive login form.
+- 📊 **Dashboard UI** - A clean and interactive dashboard layout.
+- 📱 **Responsive Design** - Works on desktop and mobile.
+
+## 📂 Project Structure
+
+```
+📦 nextjs-carbon-ui
+├── 📂 public         # Static assets
+├── 📂 src
+│   ├── 📂 components # Reusable UI components
+│   │   └── 📜 Form.tsx  # Login form component
+│   ├── 📂 styles     # Global styles and Carbon overrides
+│   └── 📂 pages      # Next.js pages (login, dashboard)
+│       ├── 📂 dashboard      # Next.js pages (dashboard)
+│       └── 📜 index.tsx    # Main index entry point
+├── 📜 package.json   # Dependencies and scripts
+├── 📜 README.md      # Project documentation
+└── 📜 tsconfig.json  # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Installation & Setup
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yashkolte/carbon_nextjs.git
+   cd carbon_nextjs
+   ```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+3. **Run the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the UI.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Dependencies
 
-## Learn More
+- **Next.js** - Framework for server-side rendering.
+- **TypeScript** - Adds type safety.
+- **Carbon Design System** - IBM's design system.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+To deploy the application, you can use Vercel:
+```sh
+npm run build
+vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
 
-## Deploy on Vercel
+This project is licensed under the **MIT License**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🙌 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+---
+🚀 Built with ❤️ using Next.js and Carbon Design System.
