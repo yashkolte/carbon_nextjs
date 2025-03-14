@@ -36,6 +36,10 @@ export default function Home() {
       <main>
         <LoginForm onSubmit={handleLogin}  />
       </main>
+      <footer>
+        <p>© 2025 CubeFactory. All rights reserved.</p>
+        <p>Created by Yash Kolte with ❤️</p>
+      </footer>
     </>
   );
 }

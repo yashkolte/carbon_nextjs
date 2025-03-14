@@ -1,5 +1,4 @@
-@import url("https://unpkg.com/carbon-components@latest/css/carbon-components.min.css");
-
+@use '@carbon/react';
 
 :root {
   --background: #ffffff;
@@ -45,5 +44,28 @@ a {
 }
 
 .bx--form-item {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: flex !important;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.textInput {
+  width: 100%;
+  border: none;
+  background-color: #ffffff00;
+}
+
+.inputGroup input {
+  width: 100%;
+  border: none;
+  background-color: #ffffff00;
 }

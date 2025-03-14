@@ -1,5 +1,4 @@
-@import url("https://unpkg.com/carbon-components@latest/css/carbon-components.min.css");
-@use '@carbon/react';
+/* @import url("https://unpkg.com/carbon-components@latest/css/carbon-components.min.css"); */
 
 .container {
   display: flex;
@@ -70,8 +69,14 @@
   border: 1px solid #e0e0e0;
   border-bottom: 2px solid #8D8D8D;
   background-color: #e8e8e8;
+  color: #000;
   border-radius: 0;
   font-size: 0.875rem;
+}
+
+#text-input-1 {
+  border: none;
+  background-color: #ffffff00;
 }
 
 .passwordContainer {
@@ -118,13 +123,15 @@
 
 .loginButton {
   width: 100%;
-  padding: 0.75rem;
   background-color: #000;
   color: white;
-  border: none;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginButton:hover {
@@ -400,13 +407,13 @@
 }
 
 .taskPercentage {
-  font-size: 48px;
+  font-size: 68px;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .taskSubtitle {
-  font-size: 14px;
+  font-size: 20px;
   color: #6f6f6f;
   margin: 0;
 }
