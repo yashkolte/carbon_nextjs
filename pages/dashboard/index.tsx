@@ -5,7 +5,8 @@ import {
   Button,
   ProgressBar,
   Tag,
-  Link
+  Link,
+  Tile
 } from '@carbon/react';
 
 import {
@@ -18,10 +19,13 @@ import {
   Add,
   LogoFigma,
   Events,
-  PresentationFile
+  PresentationFile,
+  FaceActivated,
+  FaceDissatisfied,
+  FaceNeutral
 } from '@carbon/icons-react';
 import { useRouter } from 'next/router';
-import styles from '@/styles/Home.module.scss';
+import styles from '@/styles/Dashboard.module.scss';
 
 interface Meeting {
   id: number;
@@ -115,23 +119,25 @@ const Dashboard: React.FC = () => {
               
               <div className={styles.stats}>
                 <div className={styles.statItem}>
-                  <span className={styles.statIcon} style={{ backgroundColor: '#FFE8D9' }}>👥</span>
+                <FaceActivated size={25} />
                   <span className={styles.statValue}>11</span>
                 </div>
                 <div className={styles.statItem}>
-                  <span className={styles.statIcon} style={{ backgroundColor: '#FECDCA' }}>🔴</span>
-                  <span className={styles.statValue}>56</span>
-                </div>
-                <div className={styles.statItem}>
-                  <span className={styles.statIcon} style={{ backgroundColor: '#FFF6D9' }}>🏆</span>
+                <FaceNeutral size={25}/>
                   <span className={styles.statValue}>12</span>
                 </div>
+                <div className={styles.statItem}>
+                <FaceDissatisfied size={25}/>
+                  <span className={styles.statValue}>56</span>
+                </div>
+
               </div>
             </div>
           </div>
 
           <div className={styles.taskCards}>
-            <div className={styles.taskCard} style={{ background: 'linear-gradient(135deg, #FFF0EE 0%, #FFCECC 100%)' }}>
+            
+            <Tile id="tile-1" className="taskCard bg-pink">
               <div className={styles.taskCardHeader}>
                 <h3>Prioritized tasks</h3>
                 <Button
@@ -142,12 +148,11 @@ const Dashboard: React.FC = () => {
                   tooltipPosition="bottom"
                 />
               </div>
-              
               <div className={styles.taskPercentage}>83%</div>
               <p className={styles.taskSubtitle}>Avg. Completed</p>
-            </div>
+            </Tile>
             
-            <div className={styles.taskCard} style={{ background: 'linear-gradient(135deg, #E4F7FE 0%, #B1E4FB 100%)' }}>
+            <Tile className="taskCard bg-blue">
               <div className={styles.taskCardHeader}>
                 <h3>Additional tasks</h3>
                 <Button
@@ -161,7 +166,7 @@ const Dashboard: React.FC = () => {
               
               <div className={styles.taskPercentage}>56%</div>
               <p className={styles.taskSubtitle}>Avg. Completed</p>
-            </div>
+            </Tile>
           </div>
           
           <div className={styles.trackersCard}>
